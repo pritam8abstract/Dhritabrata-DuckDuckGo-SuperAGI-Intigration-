@@ -31,6 +31,7 @@ class WriteFileTool(BaseTool):
 
         try:
             with open(final_path, 'w', encoding="utf-8") as file:
+                print(content)
                 file.write(content)
             return f"File written to successfully - {file_name}"
         except Exception as err:
