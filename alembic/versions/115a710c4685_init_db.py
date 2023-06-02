@@ -81,6 +81,7 @@ def upgrade() -> None:
         sa.Column('id', sa.Integer()),
         sa.Column('agent_id', sa.Integer()),
         sa.Column('status', sa.VARCHAR(250)),
+        sa.Column('name', sa.VARCHAR(250)),
         sa.Column('last_execution_time', sa.DateTime()),
 
         sa.Column('created_at', sa.DateTime()),
